@@ -254,9 +254,6 @@ div.section-start{
   justify-content: center;
   align-items: center;
 }
-div.section-start button{
-  margin: 0px;
-}
 footer h3{
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
@@ -330,12 +327,21 @@ footer h3{
     margin: 0px 0px 0px 0px;
     padding-left: 55px;
   }
+  .mainbanner-content{
+    height: 60vh;
+  }
   .mainbanner-content-inner h1 {
     font-size: 2.8rem;
   }
   .mainbanner-content-inner h3{
     font-size: 0.8rem;
   }
+  div.section-start{
+    margin: 10px;
+  }
+  .section-start button{
+  margin: 0px;
+}
   h3.white.p-bold.head-sm{
     font-size: 18px;
   }
@@ -457,11 +463,14 @@ footer h3{
   }
 }
 @media (max-height: 375px) {
+  .mainbanner-content{
+    height: 85vh;
+  }
   .mainbanner-content-inner h1{
     font-size: 1.5rem;
   }
   .mainbanner-content-inner h3{
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
   hr {
     margin: 10px auto;
@@ -479,9 +488,6 @@ footer h3{
   }
   h3.white.p-bold.head-sm{
     font-size: 18px;
-  }
-  div.section-start{
-  margin: 20px;
   }
 }
 @media (max-width: 350px){
