@@ -123,7 +123,7 @@ hr {
 .mainbanner-content-inner h3{
   width: 75%;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: 'Noto Serif', serif;
   line-height: 1.5em;
   margin: 0 auto;
@@ -254,6 +254,9 @@ div.section-start{
   justify-content: center;
   align-items: center;
 }
+div.section-start button{
+  margin: 0px;
+}
 footer h3{
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
@@ -291,14 +294,19 @@ footer h3{
   nav a strong{
     font-size: 12px;
   }
+  .mainbanner-content{
+    height: 65vh;
+  }
   .mainbanner-content-inner h1{
     font-size: 3.7rem;
   }
   .mainbanner-content-inner h3{
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
+  .section-features .card{
+        min-height: 460px;
 }
-@media (max-width: 768px) {
+@media (max-width: 768.9px) {
     li.nav-item{
     display: flex;
     justify-content: left;
@@ -337,11 +345,11 @@ footer h3{
     font-size: 0.8rem;
   }
   div.section-start{
-    margin: 10px;
+    margin: 15px;
   }
   .section-start button{
   margin: 0px;
-}
+  }
   h3.white.p-bold.head-sm{
     font-size: 18px;
   }
@@ -467,10 +475,10 @@ footer h3{
     height: 85vh;
   }
   .mainbanner-content-inner h1{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .mainbanner-content-inner h3{
-    font-size: 0.6rem;
+    font-size: 0.65rem;
   }
   hr {
     margin: 10px auto;
@@ -482,6 +490,9 @@ footer h3{
   color: #FFFFFF !important;
   font-size: .8em;
   font-weight: 600;
+  }
+  .mainbanner-content-inner button {
+    margin: 30px 0px 0px;
   }
   P{
     font-size: 14px;
