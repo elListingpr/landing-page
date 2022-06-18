@@ -6,17 +6,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-html{
-  height: -webkit-fill-available;
-}
-body{
-  height: -webkit-fill-available;
-}
-header{
-  height: -webkit-fill-available;
-}
 nav{
-  /*background-color: rgb(248 249 250);*/
   height: 86px;
   width: 100%;
   padding: 0px 0px;
@@ -24,15 +14,13 @@ nav{
 div.container-fluid {
   max-height: 100%;
   padding: 0px 35px;
-}nav.navbar.navbar{
+}
+nav.navbar.navbar{
   background-color: white !important;
 }
 .logonavbar{
   max-width: 180px;
   max-height: 79px;
-}
-.container-fluid img{
-  padding-bottom: 0em;
 }
 nav a strong{
   color: #2b2929 !important;
@@ -101,11 +89,11 @@ a:hover{
 }
 .mainbanner-content {
   position: relative;
-  width: 60%;
+  height: 70vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   margin: 0 auto;
 }
 .mainbanner-content-inner h1{
@@ -321,7 +309,7 @@ footer h3{
     margin: 0px 0px 0px 0px;
     padding-left: 55px;
   }
-  mainbanner-content{
+  .mainbanner-content{
     width: 100%;
   }
   .mainbanner-content-inner h1 {
@@ -407,7 +395,7 @@ footer h3{
   .mainbanner-content-inner h3{
     font-size: 0.65rem;
   }
-  .mainbanner-content-inner button{
+  .mainbanner-content-inner button,.section-start button{
   padding: 7px 25px;
   border-radius: 50em;
   color: #FFFFFF !important;
@@ -444,17 +432,17 @@ footer h3{
     font-size: 1.77rem;
   }
   .mainbanner-content-inner h3{
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
 }
 @media (max-height: 434px) {
   .mainbanner-content-inner h1{
-    font-size: 2.15rem;
+    font-size: 1.77rem;
   }
   .mainbanner-content-inner h3{
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
-  .mainbanner-content-inner button{
+  .mainbanner-content-inner button,.section-start button{
   padding: 7px 25px;
   border-radius: 50em;
   color: #FFFFFF !important;
@@ -466,6 +454,34 @@ footer h3{
   }
   h3.white.p-bold.head-sm{
     font-size: 18px;
+  }
+}
+@media (max-height: 375px) {
+  .mainbanner-content-inner h1{
+    font-size: 1.5rem;
+  }
+  .mainbanner-content-inner h3{
+    font-size: 0.5rem;
+  }
+  hr {
+    margin: 10px auto;
+    border: 1px solid;
+  }
+  .mainbanner-content-inner button,.section-start button{
+  padding: 7px 25px;
+  border-radius: 50em;
+  color: #FFFFFF !important;
+  font-size: .8em;
+  font-weight: 600;
+  }
+  P{
+    font-size: 14px;
+  }
+  h3.white.p-bold.head-sm{
+    font-size: 18px;
+  }
+  div.section-start{
+  margin: 20px;
   }
 }
 @media (max-width: 350px){
