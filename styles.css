@@ -17,8 +17,6 @@ nav{
 	height: 5.4rem;
 	width: 100vw;
 	background: #ffffff;
-	/*background-color: #00BAF0;*/
-	/*background: linear-gradient(to left, #f46b45, #eea849);*/
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -27,8 +25,8 @@ nav{
 	position: relative;
 }
 .logonavbar{
-  width: 11.25rem;
-  height: 4.9375rem;
+  width: clamp(6.5rem, 7vw + 7.5rem, 11.5rem);
+  height: clamp(2.86rem, 3.08vw + 3.3rem, 4.9375rem);
   cursor: default;
 }
 .slogan{
@@ -156,11 +154,8 @@ a.follow, .contact a, li i{
     color: white;
     background-color: #0e92d1;
   }
-  ul li:hover{
+  nav ul, nav li:hover{
   	background-color: black;
-  }
-  footer.row li:hover{
-  	background-color: none;
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
@@ -348,25 +343,42 @@ footer{
   font-size: 18px;
   text-decoration: none;
   text-decoration-style: none;
+  padding-left: 0rem;
+}
+.img-fluid{
+  width: clamp(6.5rem, 7vw + 7.5rem, 11.5rem);
+  height: clamp(2.86rem, 3.08vw + 3.3rem, 4.9375rem);
+  margin-top: -.7rem;
 }
 footer h3{
-  font-size: 1.2vw;
+  font-size: clamp(.8rem, .5vw + .8rem, 1.2rem);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
 }
 .col-md-3{
 	display: flex;
+  /*position: fixed;*/
+}
+.col-md-2{
+  /*flex: start;*/
+}
+.footer-links{
+  margin-right: 3rem;
 }
 .mb-0 a, div.text-center.white a{
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: clamp(.75rem, .45vw + .6rem, 1.125rem);
   font-weight: 500;
 }
 div.text-center.white {
 	display: flex;
 	justify-content: center;
+  font-size: clamp(.6rem, .3vw + .65rem, 1.5rem);
 }
 .bi{
-  font-size: 40px;
+  font-size: clamp(1.8rem, 1.1vw + 1.6rem, 2.5rem);
   color: white;
 }
 
@@ -385,14 +397,10 @@ div.text-center.white {
 div.footer-bottom.py-3{
   border-top: 0.1px solid RGBa(245, 245, 245,.5);
 }
-footer h3{
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
 footer div.row{
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	margin: 2rem;
+	margin-left: 1rem;
+  margin-right: 3rem;
 }
