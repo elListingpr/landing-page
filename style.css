@@ -174,7 +174,7 @@ header{
 	width: 100vw;
 }
 div .mainbanner-image{
-	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3) ), url("assets/mainbanner2.png");
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3) ), url("mainbanner2.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
