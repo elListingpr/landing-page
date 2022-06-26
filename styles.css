@@ -347,7 +347,7 @@ footer{
   padding: 1.25rem;
 }
 footer h3{
-  font-size: clamp(.8rem, .5vw + .8rem, 1.2rem);
+  font-size: clamp(.9rem, .6vw + 1rem, 1.4rem);
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
@@ -366,7 +366,7 @@ div .col{
 .footer.quick.links a, div.footer.bottom.text a{
   text-decoration: none;
   color: #FFFFFF;
-  font-size: clamp(.75rem, .45vw + .6rem, 1.125rem);
+  font-size: clamp(.7rem, .45vw + .6rem, 1.125rem);
   font-weight: 500;
 }
 .footer.social.links.list{
@@ -379,19 +379,35 @@ div .col{
   color: white;
 }
 .bi-facebook:hover{
-        background-image: linear-gradient(to left, #f15c61, black, green, darkgrey, #f15c61, blue, yellow, white, red);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        color: transparent;
-      }
+        color: rgb(255,140,255);
+}
 .bi-instagram:hover{color: rgb(255,0,191);}
 
 div.footer.bottom{
   border-top: 0.1px solid RGBa(245, 245, 245,.5);
 }
 div.footer.bottom {
-	display: flex;
-	justify-content: center;
+	text-align: center;
   font-size: clamp(.6rem, .3vw + .65rem, 1.5rem);
+}
+@media (max-width: 447px){
+  div.footer.row{
+    margin: 1.25rem 1.25rem;
+    padding: 1.25rem 0rem;
+  }
+  div .col{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  div.footer.col.two{
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 407px){
+  div.footer.col.two{
+    display: flex;
+    justify-content: flex-start;
+  }
 }
