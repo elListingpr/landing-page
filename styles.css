@@ -99,7 +99,7 @@ a.follow, .contact a, li i{
 
 #menu-toggle:checked + .menu-button-container .menu-button::before {
   margin-top: 0px;
-  transform: rotate(405deg);
+  transform: rotate(45deg);
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button {
@@ -108,7 +108,7 @@ a.follow, .contact a, li i{
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
-  transform: rotate(-405deg);
+  transform: rotate(-45deg);
 }
 @media (max-width: 834px) {
   .menu-button-container {
@@ -350,6 +350,7 @@ footer h3{
   font-size: clamp(.9rem, .6vw + 1rem, 1.4rem);
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+  margin-bottom: .5rem;
 }
 div .col{
   width: 11.5rem;
@@ -363,9 +364,10 @@ div .col{
   height: clamp(2.86rem, 3.08vw + 3.3rem, 4.9375rem);
   margin-top: -.7rem;
 }
-.footer.quick.links a, div.footer.bottom.text a{
-  text-decoration: none;
+div.footer a{
   color: #FFFFFF;
+}
+div.footer.bottom.text a{
   font-size: clamp(.7rem, .45vw + .6rem, 1.125rem);
   font-weight: 500;
 }
